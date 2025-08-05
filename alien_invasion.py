@@ -24,6 +24,7 @@ class AlienInvasion:
             self._update_screen()
             
     def _check_events(self):
+        '''Game controls (left/right key movements for ship )'''
         for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     sys.exit()
