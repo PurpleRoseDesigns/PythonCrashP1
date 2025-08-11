@@ -25,7 +25,10 @@ class Ship:
         # Movement Flags for up and down, not used in current game
         # self.moving_up = False
         # self.moving_down = False
-
+    
+    def center_ship(self):
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.x = float(self.rect.x)
             
     def update(self):
         '''Update Ship position using movement flags'''
